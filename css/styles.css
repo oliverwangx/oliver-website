@@ -1,0 +1,288 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+}
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px; 
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;  
+  z-index: 1; 
+  position: absolute;   
+  top: -40px;
+  
+}
+
+
+.skip a:focus{
+  position: fixed;
+  top: 0px;
+}
+
+
+nav {
+  padding: 0.45rem 1.25rem;
+  background-color: #00274C;
+  color: White;
+  
+}
+.navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00274C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+
+.navi li {
+  float: left;
+}
+
+.navi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navi li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navi .active {
+  background-color: #FFCB05;
+}
+
+
+.supporting .colorlib .mb-4{
+  font-size: 35px;
+}
+
+
+.main {
+  height: 30rem;
+  padding-top: 1rem;
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.main img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.supporting,
+.rating,
+.gallery,
+.location {
+  margin: 4em auto;
+}
+
+.supporting {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.supporting img {
+width: 10%;
+height: 10%;
+margin-right: 5%;
+
+}
+
+.rating {
+  background-color: #00274C;
+  height: 20rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating h1 {
+  font-size: 3rem;
+}
+
+
+.rating1 {
+  background-color: #00274C;
+  height: 20rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating1 h1 {
+  font-size: 3rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding:  20px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.location img {
+width: 100%;
+}
+
+
+.rating .container h1:before{
+  content: 'Here are my Backend projects';
+  font-size: 100%;
+  animation-name: head;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes head {
+  0% {font-size:120%; opacity:1; content: "I used Python/ Flask, Django, Pytorch"}
+    25% {font-size:100%; opacity:0;}
+    50% {font-size:120%; opacity:1; content: "I used Python/ Flask, Django, Pytorch"}
+    75% {font-size:100%; opacity:0;}
+    100% {font-size:120%;opacity:1; content: "Here are my Backend projects"}
+}
+
+.rating1 .container h1:before{
+  content: 'Here are my big data projects';
+  font-size: 100%;
+  animation-name: head1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes head1 {
+  0% {font-size:120%; opacity:1; content: "I used Hadoop, Spark, Pytorch"}
+    25% {font-size:100%; opacity:0;}
+    50% {font-size:120%; opacity:1; content: "Here are my big data projects"}
+    75% {font-size:100%; opacity:0;}
+    100% {font-size:120%;opacity:1; content: "I used Hadoop, Spark, Pytorch"}
+}
+
+@media only screen and (max-width: 1500px) {
+  .supporting img {
+    display: none;}
+
+  .gallery {
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap:30px;
+    padding:  20px;
+  }
+  
+  
+  .gallery h1 {
+    font-size: 25px;
+  }
+  @keyframes head{}
+  @keyframes head1{}
+  
+  }
+
+
+@media only screen and (max-width: 800px) {
+.supporting img {
+  display: none;}
+.rating h1{
+  font-size: 3rem;
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding:  20px;
+  margin:30px;
+  padding:5px; /* this */
+}
+
+
+.gallery h1 {
+  font-size: 25px;
+}
+
+@keyframes head{}
+  @keyframes head1{}
+
+}
+
+.project1 ,.project2, .project3, .project4, .project5, .project6,
+.project7 ,.project8 ,.project9{
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.project1 h1, .project2 h1, .project3 h1, .project4 h1, .project5 h1, .project6 h1,
+.project7 h1, .project8 h1 , .project9 h1{
+  text-align: center;
+  font-size: 25px;
+}
+
+.project1 img, .project2 img, .project3 img, .project4 img, .project5 img, .project6 img,
+.project7 img, .project8 img, .project9 img{
+  width: 100%;
+}
+
+
+footer {
+	background: #00274C;
+	height: 100px;
+	position: relative;
+}
+
+footer p {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+footer p.title {
+	font-size: 1.2em;
+	padding: 15px;
+}
+
+footer ul {
+	align-items: center;
+	display: flex;
+  padding: 20px;
+}
+
+footer ul li {
+	flex: 1;
+}
+

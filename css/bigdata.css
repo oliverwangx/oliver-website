@@ -1,0 +1,210 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px; 
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;  
+  z-index: 1; 
+  position: absolute;   
+  top: -40px;
+  
+}
+
+
+.skip a:focus{
+  position: fixed;
+  top: 0px;
+}
+
+nav {
+  padding: 0.45rem 1.25rem;
+  background-color: #00274C;
+  color: White;
+  
+}
+.navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00274C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+
+.navi li {
+  float: left;
+}
+
+.navi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navi li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navi .active {
+  background-color: #FFCB05;
+}
+
+.rating {
+    background-color: #FFCB05;
+    height: 20rem;
+    padding: 0 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rating h1 {
+    font-size: 3rem;
+    color: #00274C;
+  }
+  
+.container{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: 100px 400px 100px;
+    grid-template-rows: auto auto auto auto auto auto;
+  
+  
+  }
+  .about, .method, .clients, .contact{
+
+    grid-column: 2 / span 1;
+  }
+  
+  .about-image, .method-image, .clients-image, .contact-image{
+
+     overflow: hidden;
+     grid-column: 1 / -1;
+     max-height: 700 px;
+  
+  }
+  
+   .about, .about-image{
+    grid-row: 1 /span 1;
+  
+  }
+
+  .method, .method-image{
+    grid-row: 2 /span 1;
+  }
+  
+  
+  .clients, .clients-image{
+    grid-row: 3/span 1;
+  }
+  #contact, .contacts-image{
+    grid-row: 4/span 1;
+  }
+
+  .text-block{
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid #00274C;
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  
+  
+  @media all and (min-width: 800px){
+  
+    .container{
+    grid-template-columns: 50px auto  500px  auto  50px;
+    grid-template-rows: 70px  400px  400px  400px 400px ;
+    }
+  
+    nav{
+      background-color: #ddd;
+      text-align: right;
+      padding: 35px 0px;
+      align-self: center;
+    }
+  
+    .about, .about-image{
+        grid-row: 2 /span 1;
+      
+      }
+
+      .method, .method-image{
+        grid-row: 3 /span 1;
+      }
+      
+      
+      .clients, .clients-image{
+        grid-row: 4/span 1;
+      }
+      
+      .contact, .contact-image{
+        grid-row: 5/span 1;
+      }
+      
+    .about, .clients, .method-image, .contact-image{
+      grid-column: 3 /span 2;
+    
+    }
+  
+    .about-image, .clients-image, .method, .contact{
+
+      grid-column: 2 /span 2;
+      }
+  
+  
+  }  /*End the media query*/
+  
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+    }
+  }
+
+
+  footer {
+	background: #00274C;
+	height: 100px;
+	position: relative;
+}
+
+footer p {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+footer p.title {
+	font-size: 1.2em;
+	padding: 15px;
+}
+
+footer ul {
+	align-items: center;
+	display: flex;
+  padding: 20px;
+}
+
+footer ul li {
+	flex: 1;
+}

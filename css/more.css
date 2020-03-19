@@ -1,0 +1,175 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px; 
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;  
+  z-index: 1; 
+  position: absolute;   
+  top: -40px;
+  
+}
+
+
+.skip a:focus{
+  position: fixed;
+  top: 0px;
+}
+
+nav {
+  padding: 0.45rem 1.25rem;
+  background-color: #00274C;
+  color: White;
+  
+}
+.navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00274C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+
+.navi li {
+  float: left;
+}
+
+.navi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navi li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navi .active {
+  background-color: #FFCB05;
+}
+
+.rating {
+    background-color: #FFCB05;
+    height: 20rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rating h1 {
+    font-size: 3rem;
+    color: #00274C;
+  }
+  
+/* .pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: 350px;
+    grid-gap: 80px;
+    align-items: center;
+}
+
+#pic1{
+    grid-row: 1 /span 3;
+    grid-column: 1 /span 1;
+}
+
+#pic2{
+    grid-row: 2 /span 3;
+    grid-column: 2 /span 2;
+}
+
+#pic3{
+    grid-row: 3 /span 3;
+    grid-column: 2 /span 3;
+}
+
+#pic3{
+    grid-row: 4 /span 3;
+    grid-column: 2 /span 3;
+}
+
+#pic4{
+    grid-row: 5 /span 3;
+    grid-column: 2 /span 3;
+}
+
+#pic5{
+    grid-row: 6 /span 3;
+    grid-column: 2 /span 3;
+}
+
+#pic6{
+    grid-row: 7 /span 3;
+    grid-column: 2 /span 3;
+}
+
+#pic6{
+    grid-row: 8 /span 3;
+    grid-column: 2 /span 3;
+} */
+
+
+.pictures {
+    line-height: 0;
+   
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px; 
+
+}
+
+.pictures img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+  }
+
+body {
+    background-color: rgb(226, 226, 220);
+}
+
+footer {
+	background: #00274C;
+	height: 100px;
+	position: relative;
+}
+
+footer p {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+footer p.title {
+	font-size: 1.2em;
+	padding: 15px;
+}
+
+footer ul {
+	align-items: center;
+	display: flex;
+  padding: 20px;
+}
+
+footer ul li {
+	flex: 1;
+}
